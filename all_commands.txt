@@ -1,0 +1,35 @@
+<<<<<<<<<<<<<<<<< Python environment commands >>>>>>>>>>>>>>>>>>>>d
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+python_env\Scripts\activate
+
+deactivate
+
+<<<<<<<<<<<<<<<<< Django commands >>>>>>>>>>>>>>>>>>>>
+
+django-admin startproject {project_name}
+
+django-admin startapp {app_name}
+
+python manage.py runserver
+
+python manage.py makemigrations
+
+python manage.py migrate
+
+<<<<<<<<<<<<<<<<< React commands >>>>>>>>>>>>>>>>>>>>
+
+npx create-react-app {app_name}
+
+npm install react react-dom react-router-dom
+
+npm install @mui/material @emotion/react @emotion/styled
+
+npm install axios
+
+npm init -y
+
+npm start
+
+npm run build
