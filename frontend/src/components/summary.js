@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './summary.css';
 
@@ -18,7 +19,7 @@ function Summary() {
     };
 
     return (
-        <div className="container-fluid p-0">
+        <div className="container">
             <nav className="navbar">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="/">
@@ -58,7 +59,9 @@ function Summary() {
 
                             {/* Upload Section */}
                             <div className="upload-section text-center mt-3">
-                                <a href="#">Upload Doc</a>
+                                <Link to="/upload_file/">
+                                    <button type="button" class="btn btn-link">Upload Docs</button>
+                                </Link>
                             </div>
                         </div>
                     </div>

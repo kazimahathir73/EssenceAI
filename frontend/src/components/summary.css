@@ -5,6 +5,7 @@
 }
 
 #outputTextArea {
+    height: 345px;
     background-color: #e9e9e9;
 }
 
@@ -23,16 +24,16 @@
 }
 
 /* Upload Link Styling */
-.upload-section a {
+.btn-link {
     color: #0fc439;
     text-decoration: none;
 }
 
-.upload-section a:hover {
+.btn-link:hover {
+    color: #0a6220;
     text-decoration: underline;
 }
 
-/* Ensure the height of both cards is equal */
 @media (min-width: 768px) {
     .summary-card {
         height: 100%;

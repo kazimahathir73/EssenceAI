@@ -4,7 +4,7 @@ import './homepage.css';
 
 function Homepage() {
     return (
-        <div className="container-fluid p-0">
+        <div className="container">
             {/* Header Bar */}
             <nav className="navbar">
                 <div className="container-fluid">
