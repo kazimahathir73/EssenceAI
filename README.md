@@ -1,61 +1,78 @@
 # EssenceAI
 
-This is a web-based summarization app built with **React** and **Bootstrap**. The app allows users to input text and summarize it. The input and output sections are neatly arranged side by side for a user-friendly experience.
+This is a web-based summarization app built with React and Bootstrap. The app allows users to input text and generate concise summaries using a custom-trained T5 model. The T5 model has been fine-tuned on the Gigaword dataset, which provides high-quality summarization results. The input and output sections are neatly arranged side by side for a user-friendly experience.
 
 ## Table of Contents
 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
+- [Dataset](#dataset)
 - [Installation](#installation)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
 
 ## Features
 
-- Responsive layout with **Bootstrap**
-- Text input section for user text
-- A "Summarize" button to process the input
-- Display the summarized text in the output section
-- Option to upload a document to be summarized
-- Clear and modern UI, similar to existing summarization tools
+- User-friendly interface for text summarization
+- Input and output sections side by side
+- Summarization using a custom-trained **T5 model** fine-tuned on the Gigaword dataset
+- Ability to upload documents for summarization
+- Clean UI built with **Bootstrap**
 
 ## Technologies Used
 
-- **React**: A JavaScript library for building user interfaces.
-- **Bootstrap**: A CSS framework for responsive and mobile-first websites.
-- **CSS**: Custom styling for the UI.
-- **HTML5**: For semantic structuring of the web pages.
-- **T5 Model**: T5 deep learning model was used for summarization.
+- **React** (Frontend)
+- **Django** (Backend)
+- **Bootstrap** (CSS Framework)
+- **Python** for model training
+- **T5 model** fine-tuned on the **Gigaword dataset**
+
+## Dataset
+
+This project uses the **Gigaword** dataset, which consists of pairs of long text articles and their corresponding summaries. The **T5 model** was fine-tuned on this dataset to improve summarization capabilities and generate concise summaries based on the user's input.
+
+Dataset paper - [Paper Link](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1204/reports/custom/15722650.pdf)
+
+Dataset download - [Kaggle Dataset Link](https://www.kaggle.com/datasets/arngowda/gigaword-corpus) 
 
 ## Installation
 
-Follow the steps below to set up and run the project locally:
+To get started with the project:
 
 1. Clone the repository:
 
    ```bash
    git clone https://github.com/kazimahathir73/EssenceAI.git
+   cd EssenceAI
    ```
 
-2. Navigate into the project directory:
+2. Install frontend dependencies:
 
    ```bash
    cd frontend
-   ```
-
-3. Install the necessary dependencies:
-
-   ```bash
    npm install
    ```
 
-4. Start the development server:
+3. Install backend dependencies:
 
    ```bash
-   npm start
+   cd ../backend
+   pip install -r requirements.txt
    ```
 
-5. The app will be running on `http://localhost:3000/` in your web browser.
+4. Run the frontend and backend servers:
+
+   - Frontend (React):
+     ```bash
+     cd frontend
+     npm start
+     ```
+
+   - Backend (Django):
+     ```bash
+     cd backend
+     python manage.py runserver
+     ```
 
 
 ## Project Structure
