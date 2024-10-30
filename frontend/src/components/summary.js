@@ -11,7 +11,6 @@ function Summary() {
         axios.post(`http://localhost:8000/backend/summary/`, { input_txt : inputText })
         .then(response => {
             setSummaryText(response.data);
-            setInputText('');
           })
         .catch(error => {
             console.error('There was an error fetching the texts!', error);
