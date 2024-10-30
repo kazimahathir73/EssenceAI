@@ -6,7 +6,7 @@ from summarizer_model.response import get_summary
 
 @api_view(['POST'])
 def summary(request):
-    input_text = request.data.get('input_text')
+    input_text = request.data.get('input_txt')
     output_text = get_summary(input_text)
 
     data = {
