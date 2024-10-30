@@ -3,6 +3,7 @@
 This is a web-based summarization app built with React and Bootstrap. The app allows users to input text and generate concise summaries using a custom-trained T5 model. The T5 model has been fine-tuned on the Gigaword dataset, which provides high-quality summarization results. The input and output sections are neatly arranged side by side for a user-friendly experience.
 
 Demo Video - 
+
 Pretrained T5 Model -
 
 ## Table of Contents
