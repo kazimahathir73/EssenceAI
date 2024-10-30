@@ -8,7 +8,7 @@ function Summary() {
     const [summaryText, setSummaryText] = useState('');
 
     const handleSummarize = () => {
-        axios.get(`http://localhost:8000/backend/summary/`, { input_txt : inputText })
+        axios.post(`http://localhost:8000/backend/summary/`, { input_txt : inputText })
         .then(response => {
             setSummaryText(response.data);
             setInputText('');
